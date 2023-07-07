@@ -5,6 +5,23 @@ import Link from "next/link";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    setShowMenu(false);
+    const href = e.currentTarget.href;
+    const taretId = href.replace(/.*\#/, "");
+    const elem = document.getElementById(taretId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+    // Update the class name of the clicked link
+    const links = document.querySelectorAll(".nav-link");
+    links.forEach((link) => {
+      link.classList.remove("active");
+    });
+    e.currentTarget.classList.add("active");
+  };
+  
   return (
     <div className="w-full text-[15px] py-4 flex items-center justify-between container mx-auto px-4">
       <motion.div
