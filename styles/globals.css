@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .tag {
+  @apply w-full flex items-center justify-center py-2 rounded-md border cursor-pointer text-sm;
+} */
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
