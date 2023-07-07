@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="w-full text-[15px] py-4 flex items-center justify-between container mx-auto">
+    <div className="w-full text-[15px] py-4 flex items-center justify-between container mx-auto px-4">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -12,38 +13,132 @@ const Header = () => {
       >
         <span className="text-3xl font-titleFont">Propertymax</span>
       </motion.div>
-      <div>
+      <div className="hidden xl:inline-flex">
         <ul className="flex gap-x-5 text-[#7F7F80]">
-          <li>
+          <motion.li
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
             <Link legacyBehavior href="#home">
               how it works
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
             <Link legacyBehavior href="#home">
               About Us
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
             <Link legacyBehavior href="#home">
               Our Agent
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
             <Link legacyBehavior href="#home">
               Contact Us
             </Link>
-          </li>
+          </motion.li>
         </ul>
       </div>
-      <div className="flex gap-2">
-        <button className="border w-[170px] border-slate-600 p-2 rounded-full">
+      <div className="hidden xl:flex gap-2">
+        <motion.button
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="border w-[170px] border-slate-600 p-2 rounded-full"
+        >
           Free Consultation
-        </button>
-        <button className="border w-[170px] bg-[#0397F9] text-white p-2 rounded-full">
+        </motion.button>
+        <motion.button
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="border w-[170px] bg-standardBlue text-white p-2 rounded-full"
+        >
           Configure now
-        </button>
+        </motion.button>
       </div>
+      <div
+        onClick={() => setShowMenu(true)}
+        className="w-6 h-5 flex flex-col justify-between items-center xl:hidden text-4xl text-textGreen cursor-pointer overflow-hidden group"
+      >
+        <span className="w-full h-[2px] bg-standardBlue inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300"></span>
+        <span className="w-full h-[2px] bg-standardBlue inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300"></span>
+        <span className="w-full h-[2px] bg-standardBlue inline-flex transform translate-x-1 group-hover:translate-x-3 transition-all ease-in-out duration-300"></span>
+      </div>
+      {showMenu ? (
+        <div className="bg-white w-full h-[100vh] absolute">
+          <ul>
+            <motion.li
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <Link legacyBehavior href="#home">
+                how it works
+              </Link>
+            </motion.li>
+            <motion.li
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <Link legacyBehavior href="#home">
+                About Us
+              </Link>
+            </motion.li>
+            <motion.li
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              <Link legacyBehavior href="#home">
+                Our Agent
+              </Link>
+            </motion.li>
+            <motion.li
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
+              <Link legacyBehavior href="#home">
+                Contact Us
+              </Link>
+            </motion.li>
+          </ul>
+          <div className="gap-y-2">
+            <motion.button
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="border w-[170px] border-slate-600 p-2 rounded-full"
+            >
+              Free Consultation
+            </motion.button>
+            <motion.button
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              className="border w-[170px] bg-standardBlue text-white p-2 rounded-full"
+            >
+              Configure now
+            </motion.button>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 };

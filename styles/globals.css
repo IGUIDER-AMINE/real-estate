@@ -7,6 +7,14 @@
 } */
 
 /* :root {
+  --green-900: #006d77;
+  --blue-900: #0397f9;
+  --dark-900: #1b3b51;
+  --orange-900: #fb8b24;
+  --purple-900: #5d479d;
+} */
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
