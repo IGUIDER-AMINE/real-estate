@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>s</title>
+        <title>Real-Estate</title>
       </Head>
       <Layout>
         <Banner />

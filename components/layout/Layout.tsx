@@ -9,10 +9,13 @@ type LayoutProps = {
 
 export const Layout = ({ children }: LayoutProps) => {
   return (
-    <>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </>
+    <section>
+      {/*  overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60 */}
+      <main className="h-[100vh] font-bodyFont flex flex-col justify-between gap-y-24 overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
+        <Header />
+        {children}
+        <Footer />
+      </main>
+    </section>
   );
 };
