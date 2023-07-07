@@ -11,7 +11,7 @@ export const Layout = ({ children }: LayoutProps) => {
   return (
     <section>
       {/*  overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60 */}
-      <main className="h-[100vh] font-bodyFont flex flex-col justify-between gap-y-16 overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
+      <main className="h-[100vh] font-bodyFont flex flex-col justify-between gap-y-4 lg:gap-y-16 overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
         <Header />
         {children}
         <Footer />
