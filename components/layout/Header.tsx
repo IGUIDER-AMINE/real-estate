@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MdOutlineClose } from "react-icons/md";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -80,8 +81,26 @@ const Header = () => {
         <span className="w-full h-[2px] bg-standardBlue inline-flex transform translate-x-1 group-hover:translate-x-3 transition-all ease-in-out duration-300"></span>
       </div>
       {showMenu ? (
-        <div className="bg-white w-full h-[100vh] absolute">
-          <ul>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col gap-y-4 p-4 bg-white top-0 left-0 w-full h-screen absolute"
+        >
+          <div className="flex items-center">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <span className="text-3xl font-titleFont">Propertymax</span>
+            </motion.div>
+            <MdOutlineClose
+              onClick={() => setShowMenu(false)}
+              className="text-3xl text-standardBlue cursor-pointer hover:text-red-500 absolute top-4 right-4"
+            />
+          </div>
+          <ul className="space-y-4">
             <motion.li
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -119,12 +138,12 @@ const Header = () => {
               </Link>
             </motion.li>
           </ul>
-          <div className="gap-y-2">
+          <div className="space-y-4">
             <motion.button
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="border w-[170px] border-slate-600 p-2 rounded-full"
+              className="border block w-[170px] border-slate-600 p-2 rounded-full"
             >
               Free Consultation
             </motion.button>
@@ -132,12 +151,12 @@ const Header = () => {
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className="border w-[170px] bg-standardBlue text-white p-2 rounded-full"
+              className="border block w-[170px] bg-standardBlue text-white p-2 rounded-full"
             >
               Configure now
             </motion.button>
           </div>
-        </div>
+        </motion.div>
       ) : null}
     </div>
   );
