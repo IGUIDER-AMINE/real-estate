@@ -15,7 +15,7 @@ const Header = () => {
         <span className="text-3xl font-titleFont">Propertymax</span>
       </motion.div>
       <div className="hidden xl:inline-flex">
-        <ul className="flex gap-x-5 text-[#7F7F80]">
+        <ul className="flex gap-x-5 text-standardcolor">
           <motion.li
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
