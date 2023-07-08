@@ -61,4 +61,57 @@ const estates_data = [
   },
 ];
 
-export { estates_data };
+const agents_data = [
+  {
+    name: "Kim Meeks",
+    phone_number: "+628712345",
+    image: "/asstes/images/img7.jpg",
+  },
+  {
+    name: "Kim Meeks",
+    phone_number: "+628712345",
+    image: "/asstes/images/img8.jpg",
+  },
+  {
+    name: "Kim Meeks",
+    phone_number: "+628712345",
+    image: "/asstes/images/img7.jpg",
+  },
+  {
+    name: "Kim Meeks",
+    phone_number: "+628712345",
+    image: "/asstes/images/img8.jpg",
+  },
+  {
+    name: "Kim Meeks",
+    phone_number: "+628712345",
+    image: "/asstes/images/img7.jpg",
+  },
+  {
+    name: "Kim Meeks",
+    phone_number: "+628712345",
+    image: "/asstes/images/img8.jpg",
+  },
+  {
+    name: "Kim Meeks",
+    phone_number: "+628712345",
+    image: "/asstes/images/img7.jpg",
+  },
+  {
+    name: "Kim Meeks",
+    phone_number: "+628712345",
+    image: "/asstes/images/img8.jpg",
+  },
+  {
+    name: "Kim Meeks",
+    phone_number: "+628712345",
+    image: "/asstes/images/img7.jpg",
+  },
+  {
+    name: "Kim Meeks",
+    phone_number: "+628712345",
+    image: "/asstes/images/img8.jpg",
+  },
+];
+
+export { estates_data, agents_data };
