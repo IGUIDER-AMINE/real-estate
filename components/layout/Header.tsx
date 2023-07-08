@@ -21,7 +21,7 @@ const Header = () => {
     });
     e.currentTarget.classList.add("active");
   };
-  
+
   return (
     <div className="w-full text-[15px] py-4 flex items-center justify-between container mx-auto px-4">
       <motion.div
@@ -97,12 +97,13 @@ const Header = () => {
         <span className="w-full h-[2px] bg-standardBlue inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300"></span>
         <span className="w-full h-[2px] bg-standardBlue inline-flex transform translate-x-1 group-hover:translate-x-3 transition-all ease-in-out duration-300"></span>
       </div>
+      {/* sideBar */}
       {showMenu ? (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col gap-y-4 p-4 bg-white top-0 left-0 w-full h-screen absolute"
+          className="flex z-10 flex-col gap-y-4 p-4 bg-white top-0 left-0 w-full h-screen absolute"
         >
           <div className="flex items-center">
             <motion.div
@@ -123,7 +124,7 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <Link legacyBehavior href="#home">
+              <Link href="#home" onClick={handleScroll}>
                 how it works
               </Link>
             </motion.li>
@@ -132,7 +133,7 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <Link legacyBehavior href="#home">
+              <Link href="#home" onClick={handleScroll}>
                 About Us
               </Link>
             </motion.li>
@@ -141,7 +142,7 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <Link legacyBehavior href="#home">
+              <Link href="#home" onClick={handleScroll}>
                 Our Agent
               </Link>
             </motion.li>
@@ -150,7 +151,7 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <Link legacyBehavior href="#home">
+              <Link href="#home" onClick={handleScroll}>
                 Contact Us
               </Link>
             </motion.li>
