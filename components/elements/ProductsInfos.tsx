@@ -30,7 +30,7 @@ const ProductsInfos = ({ id, title, description, image }: Props) => {
         <div className="hidden md:block min-h-[300px] lg:min-h-[500px] min-w-[50%] relative">
           <Image
             src={image}
-            alt="image estate"
+            alt={title}
             className="object-cover rounded-2xl h-full"
             quality={100}
             fill

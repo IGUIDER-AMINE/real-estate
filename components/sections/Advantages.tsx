@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Advantages = () => {
   return (
-    <section id="Advantages" className="space-y-14 container mx-auto px-4">
+    <section id="HowItWorks" className="space-y-14 container mx-auto px-4">
       <div className="flex flex-col md:flex-row gap-2 justify-between">
         <h1 className="font-bold font-titleFont text-2xl xl:text-3xl md:max-w-[50%] ">
           Unlock access to 500+ cites with our membership

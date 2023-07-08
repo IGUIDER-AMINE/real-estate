@@ -3,7 +3,7 @@ import ProductsInfos from "../elements/ProductsInfos";
 
 const Products = () => {
   return (
-    <section id="Products" className="space-y-16 container mx-auto px-4">
+    <section id="AboutUs" className="space-y-16 container mx-auto px-4">
       <ProductsInfos
         id="01"
         title="Captivating Home Views"

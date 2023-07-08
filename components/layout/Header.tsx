@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <section className="w-full sticky bg-white top-0 z-10">
-      <div className="text-[15px] py-4 flex items-center justify-between container mx-auto px-4">
+      <div className="text-[15px] font-medium py-4 flex items-center justify-between container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -40,7 +40,7 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <Link href="#Advantages" onClick={handleScroll}>
+              <Link href="#HowItWorks" onClick={handleScroll}>
                 how it works
               </Link>
             </motion.li>
@@ -49,7 +49,7 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <Link href="#home" onClick={handleScroll}>
+              <Link href="#AboutUs" onClick={handleScroll}>
                 About Us
               </Link>
             </motion.li>
@@ -58,7 +58,7 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <Link href="#home" onClick={handleScroll}>
+              <Link href="#OurAgents" onClick={handleScroll}>
                 Our Agent
               </Link>
             </motion.li>
@@ -67,7 +67,7 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <Link href="#home" onClick={handleScroll}>
+              <Link href="#ContactUs" onClick={handleScroll}>
                 Contact Us
               </Link>
             </motion.li>
@@ -126,7 +126,7 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                <Link href="#Advantages" onClick={handleScroll}>
+                <Link href="#HowItWorks" onClick={handleScroll}>
                   how it works
                 </Link>
               </motion.li>
@@ -135,7 +135,7 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <Link href="#home" onClick={handleScroll}>
+                <Link href="#AboutUs" onClick={handleScroll}>
                   About Us
                 </Link>
               </motion.li>
@@ -144,7 +144,7 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <Link href="#home" onClick={handleScroll}>
+                <Link href="#OurAgents" onClick={handleScroll}>
                   Our Agent
                 </Link>
               </motion.li>
@@ -153,7 +153,7 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                <Link href="#home" onClick={handleScroll}>
+                <Link href="#ContactUs" onClick={handleScroll}>
                   Contact Us
                 </Link>
               </motion.li>
