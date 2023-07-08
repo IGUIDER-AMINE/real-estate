@@ -8,9 +8,8 @@ const Advantages = () => {
   return (
     <section id="Advantages" className="space-y-14 container mx-auto px-4">
       <div className="flex flex-col md:flex-row gap-2 justify-between">
-        <h1 className="font-bold font-titleFont text-1xl xl:text-3xl ">
-          Unlock access to 500+ cites
-          <br /> with our membership
+        <h1 className="font-bold font-titleFont text-2xl xl:text-3xl md:max-w-[50%] ">
+          Unlock access to 500+ cites with our membership
         </h1>
         <button className="font-semibold flex items-center gap-x-2">
           View member preks <BsArrowRight />
