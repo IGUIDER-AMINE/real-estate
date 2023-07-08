@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full text-[15px] py-4 flex items-center justify-between container mx-auto px-4">
+    <section className="w-full text-[15px] py-4 flex items-center justify-between container mx-auto px-4">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -176,7 +176,7 @@ const Header = () => {
           </div>
         </motion.div>
       ) : null}
-    </div>
+    </section>
   );
 };
 

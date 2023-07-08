@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div id="Banner" className="space-y-8 px-4 lg:px-0">
+    <section id="Banner" className="space-y-8 px-4 lg:px-0">
       <div className="container mx-auto lg:px-24">
         <motion.h1
           initial={{ opacity: 0 }}
@@ -76,7 +76,7 @@ const Banner = () => {
           })}
         </Swiper>
       </motion.div>
-    </div>
+    </section>
   );
 };
 
