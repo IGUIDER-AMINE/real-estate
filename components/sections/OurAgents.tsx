@@ -3,6 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { agents_data } from "@/util/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+
 import Image from "next/image";
 
 const OurAgents = () => {
