@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { estates_data } from "@/util/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -6,14 +7,23 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div id="Banner" className="space-y-8">
-      <div className="container mx-auto px-4 lg:px-24">
-        <h1 className="font-titleFont text-[#27292D] text-2xl md:text-4xl lg:text-5xl xl:text-7xl font-medium">
+    <div id="Banner" className="space-y-8 px-4 lg:px-0">
+      <div className="container mx-auto lg:px-24">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          className="font-titleFont text-[#27292D] text-2xl md:text-4xl lg:text-5xl xl:text-7xl font-medium"
+        >
           Get your <span className="font-bold">dream home</span> online,
           hassle-free browsing with our expert guidance.
-        </h1>
+        </motion.h1>
       </div>
-      <div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
+      >
         <Swiper
           slidesPerView={"auto"}
           spaceBetween={30}
@@ -65,7 +75,7 @@ const Banner = () => {
             );
           })}
         </Swiper>
-      </div>
+      </motion.div>
     </div>
   );
 };
