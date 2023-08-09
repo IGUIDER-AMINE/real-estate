@@ -2,7 +2,7 @@
 
 My name is IGUIDER Amine i'm a full-stack developer
 
-I am excited to share the new design concept for the Real Estate Landing Page Website called Propertymax. Check link for more! 😉
+I am excited to share the new design concept for the Real Estate Landing Page Website called Propertymax. Check the link for more! 😉
 
 ## Deploy on Vercel
 
